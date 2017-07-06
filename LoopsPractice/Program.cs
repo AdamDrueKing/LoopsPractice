@@ -173,23 +173,63 @@ namespace LoopsPractice
             //Ask the user if they have another class they would like to add to theyr GPA calculation.
             //Using a Do-While Loop, repeate the code if the user says "YES"
 
-            string addedClass;
-            string gradeInClass;
-            string addedClassToo;
-            string gradeInClassToo;
-            Console.WriteLine("Do you have a class you would like to add to your GPA calculation? YES/NO");
-            addedClass = Console.ReadLine();
-            Console.WriteLine("What is the grade you received in the class?");
-            gradeInClass = Console.ReadLine();
-            do
-            {
-                Console.WriteLine("Do you have another class you would like to add to your GPA calculation? YES/NO");
-                addedClassToo = Console.ReadLine();
-                Console.WriteLine("What is the grade you received in the class?");
-                gradeInClassToo = Console.ReadLine();
-            }
-            while (addedClassToo == "YES");
+            //string addedClass;
+            //string gradeInClass;
+            //string addedClassToo;
+            //string gradeInClassToo;
+            //Console.WriteLine("Do you have a class you would like to add to your GPA calculation? YES/NO");
+            //addedClass = Console.ReadLine();
+            //Console.WriteLine("What is the grade you received in the class?");
+            //gradeInClass = Console.ReadLine();
+            //do
+            //{
+            //    Console.WriteLine("Do you have another class you would like to add to your GPA calculation? YES/NO");
+            //    addedClassToo = Console.ReadLine();
+            //    //if addedClassToo(Console.ReadLine() == "NO");
+            //    //    {
+            //    //    continue;
+            //    //}
+            //    Console.WriteLine("What is the grade you received in the class?");
+            //    gradeInClassToo = Console.ReadLine(); 
+            //}
+            //while (addedClassToo == "YES");
 
+
+            //Nested Loop
+            //loop inside of another loop
+
+            //Create a nested loop structure that prints:
+            //1234
+            //1234
+
+            //for(int rows = 1; rows <=6; rows++)
+            //{
+            //    for(int columns = 1; columns <=4; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Print a Triangle
+            //Outer loop will go line by line
+            //The inner loop will go over different elements in the line.
+            //Result:
+            //   1
+            //  1 2
+            // 1 2 3 
+            //1 2 3 4...
+            
+            for(int rows =1; rows <=4; rows++)
+            {
+                for(int columns = 1; columns <= rows; columns++)
+                {
+                    Console.Write(columns);
+                }
+                Console.WriteLine();
+            }
+            
+              
 
         }
     }
