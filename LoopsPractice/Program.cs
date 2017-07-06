@@ -106,23 +106,34 @@ namespace LoopsPractice
             //You can think of the structure of a foreach loop as the statement:
             //For each item in the collection, do something
 
-            string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
-            //Always start with the keyword foreach
-            foreach(string month in firstMonths)
-            {
-                Console.WriteLine(month);
-            }
+            //string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
+            ////Always start with the keyword foreach
+            //foreach(string month in firstMonths)
+            //{
+            //    Console.WriteLine(month);
+            //}
             //foreach loops allow the temporary variable to "know" to assign...
             //itself to each element in the collection (like an array), one at a time
 
             //Create an array of musicians (bands or solo artists)
             //Using a foreach loop, print each musician's name
-            string[] musicians = { "Mos Def", "Jimi Hendrix", "Masego", "Wu Tang Clan" };
-            foreach (string musician in musicians)
-            {
-                Console.WriteLine(musician);
-            }
+            //string[] musicians = { "Mos Def", "Jimi Hendrix", "Masego", "Wu Tang Clan" };
+            //foreach (string musician in musicians)
+            //{
+            //    Console.WriteLine(musician);
+            //}
 
+
+            //While loop is used when you want a chunk of code to run only if a condition is met first
+            //While something is TRUE
+
+            Console.WriteLine("What is your first name?");
+            string firstName =Console.ReadLine();
+            while(firstName.ToUpper() == "ADAM")
+            {
+                Console.WriteLine("Dude, you are amazing.");
+                break;
+            }
         }
     }
 }
