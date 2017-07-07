@@ -12,7 +12,7 @@ namespace LoopsPractice
         {
 
             //When would you use a loop?
-            //Why would you use a loop?
+            //Why would you use a loop
             //Nested loops
             //Infinite loops
             ////Keywoords break and continue
@@ -260,7 +260,7 @@ namespace LoopsPractice
 
 
             //Write a program that prints a multiplication table (5 x 5, for example) using a nested loops.
-            .
+
             //int multNum = 1;
             //for(int i = 1; i <= 5; i++)
             //{
@@ -275,41 +275,76 @@ namespace LoopsPractice
             //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
             //Hint: Research.startsWith()
 
-            string[] faveMovies = { "Star Wars", "Anchorman", "Avatar", "Serenity", "Super Troopers" };
-            foreach(string movie in faveMovies)
-            {
-                if (movie.StartsWith("A"))
-                {
-                    continue;
-                }
-                else if (movie.StartsWith("E"))
-                {
-                    continue;
-                }
-                else if (movie.StartsWith("I"))
-                {
-                    continue;
-                }
-                else if (movie.StartsWith("O"))
-                {
-                    continue;
-                }
-                else if (movie.StartsWith("U"))
-                {
-                    continue;
-                }
-                else
-                {
-                    Console.WriteLine(movie);
-                }
+            //string[] faveMovies = { "Star Wars", "Anchorman", "Avatar", "Serenity", "Super Troopers" };
+            //foreach (string movie in faveMovies)
+            //{
+            //    if (movie.StartsWith("A"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("E"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("I"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("O"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("U"))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(movie);
+            //    }
+            //}
 
-            }
 
 
 
 
             //Write a console application that asks the user for an integer. If that integer is evenly divisible by 3, 
             //...then write “You Won!” If it isn’t, write “You Lost.” Keep asking them for a number (looping)until they win
+
+            //I know I need to ask the user for an integer, get the input, and save it.
+            Console.WriteLine("Please enter an integer (whole number).");
+            int userNum = int.Parse(Console.ReadLine());
+            ////"Evenly divisible" is a good indicator of modulus
+            ////We have to check if the input is % 3 == 0
+            //for (int i = 1; i <= userNum; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine("You Won!");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You Lost!");
+            //        Console.WriteLine("Please enter another integer.");
+            //        userNum = int.Parse(Console.ReadLine());
+            //    }
+            //}
+
+            //OR
+
+            while (userNum %3 != 0)
+            {
+                Console.WriteLine("You Lost!");
+                Console.WriteLine("Please enter another integer.");
+                userNum = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("You Won!");
+
+            //We need a conditional and if the input % 3 == 0, we need to write "You Won!" and exit the loop.
+            //If input %3 != 0, we must write "You Lost!" and ask for another integer until they win.
+
+
 
 
         }
