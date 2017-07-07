@@ -230,34 +230,59 @@ namespace LoopsPractice
             //}
 
 
-            Console.WriteLine("Lets play FizzBuzz!");
-            Console.WriteLine("Please enter your FIZZ number");
-            int fizz = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter your BUZZ number");
-            int buzz = int.Parse(Console.ReadLine());
-            Console.WriteLine("What number would you like me to count to? (Pick a high one)");
-            int endNumber = int.Parse(Console.ReadLine());
-            for(int i = 0; i <= endNumber; i++)
-            {
-                if(i % fizz == 0 && i % buzz == 0)
-                {
-                    Console.WriteLine("Fizz Buzz!");
-                }
-                else if (i % fizz == 0)
-                {
-                    Console.WriteLine("Fizz!");
-                }
+            //Console.WriteLine("Lets play FizzBuzz!");
+            //Console.WriteLine("Please enter your FIZZ number");
+            //int fizz = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please enter your BUZZ number");
+            //int buzz = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What number would you like me to count to? (Pick a high one)");
+            //int endNumber = int.Parse(Console.ReadLine());
+            //for(int i = 0; i <= endNumber; i++)
+            //{
+            //    if(i % fizz == 0 && i % buzz == 0)
+            //    {
+            //        Console.WriteLine("Fizz Buzz!");
+            //    }
+            //    else if (i % fizz == 0)
+            //    {
+            //        Console.WriteLine("Fizz!");
+            //    }
 
-            else if (i % buzz == 0)
-                {
-                    Console.WriteLine("Buzz!");
-                }
-                else
-                {
-                    Console.WriteLine(i);
-                }
-            
-              
+            //else if (i % buzz == 0)
+            //    {
+            //        Console.WriteLine("Buzz!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+
+
+
+            //Write a program that prints a multiplication table (5 x 5, for example) using a nested loops.
+            .
+            //int multNum = 1;
+            //for(int i = 1; i <= 5; i++)
+            //{
+            //    for(int j = 1; j <= 5; j++)
+            //    {
+            //        Console.Write(multNum * j + " ");
+            //    }
+            //    multNum += 1; 
+            //    Console.WriteLine();
+            //}
+
+            //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
+            //Hint: Research.startsWith()
+
+
+
+
+
+
+            //Write a console application that asks the user for an integer. If that integer is evenly divisible by 3, 
+            //...then write “You Won!” If it isn’t, write “You Lost.” Keep asking them for a number (looping)until they win
+
 
         }
     }
